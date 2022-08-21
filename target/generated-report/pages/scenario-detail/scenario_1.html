@@ -77,18 +77,24 @@ font-src * data: blob: 'unsafe-inline';"/>
             var chart = new Chart(ctx, {
   "data": {
     "labels": [
-      "User visits the ipl season 2020 men\u0027s point table page",
-      "User should see the point of every team and able to sum the points of all teams",
-      "com.ipl.steps.CommonHooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
+      "User visits the landing page of carb manager web app.",
+      "User clicks on sign in link",
+      "User should be redirected to sign in page",
+      "Verify sign in page contents",
+      "com.carbmanager.steps.CommonHooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
     ],
     "datasets": [
       {
         "data": [
-          1,
+          0,
+          0,
+          0,
           0,
           0
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)"
@@ -100,9 +106,13 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)"
@@ -114,9 +124,13 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
@@ -147,7 +161,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 1,
+            "stepSize": 0,
             "display": true
           },
           "stacked": true,
@@ -250,17 +264,17 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2021-04-05 22:35:38</span>
+            <span class="text-light">2022-08-21 16:33:45</span>
         </div>
     </nav>
     <main role="main" class="container">
         <div class="cluecumber-template">
             <div class="pb-2 mt-4 mb-2 border-bottom">
                     <h5>
-                            <a href="pages/feature-scenarios/feature_0.html">As a IPLT20 fan, I want to see total points of all men&#39;s teams in IPL Points table page.</a>
-                        <span class="small">file:src/test/resources/features/pointTable/IPLPointTableTests.feature</span>
+                            <a href="pages/feature-scenarios/feature_0.html">As a registered user of carb manager web app, I want to login to carb manager web app.</a>
+                        <span class="small">file:src/test/resources/features/login/LoginTests.feature</span>
                     </h5>
-                    <h3>Verify the total of the points of all men&#39;s teams of IPLT20 tournament 2020 season.</h3>
+                    <h3>Verify user is able to navigate to sign in page.</h3>
             </div>
 
     <div class="row" id="scenario-detail">
@@ -278,9 +292,9 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2021-04-05 22:35:27</li>
-                <li class="list-group-item">Ended on:<br>2021-04-05 22:35:28</li>
-            <li class="list-group-item">Test Runtime:<br>0m 01s 856ms</li>
+                <li class="list-group-item">Started on:<br>2022-08-21 16:30:30</li>
+                <li class="list-group-item">Ended on:<br>2022-08-21 16:30:31</li>
+            <li class="list-group-item">Test Runtime:<br>0m 00s 858ms</li>
             <li class="list-group-item">            </li>
             </div>
         </div>
@@ -291,11 +305,11 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    2         Steps
+                    4         Steps
 
                 </li>
                 <li class="list-group-item">
-                    2 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    4 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -329,13 +343,13 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-1 text-left small">1.</div>
                             <div class="col-8 text-left">
-                                <span data-toggle="tooltip" title="com.ipl.steps.pointTable.PointTableSteps.openTestUrl()">
-                                    <a href="pages/step-scenarios/step_885857819.html"><span
-                                                class="keyword">When </span> User visits the ipl season 2020 men's point table page</a>
+                                <span data-toggle="tooltip" title="com.carbmanager.steps.login.LoginSteps.openTestAppUrl()">
+                                    <a href="pages/step-scenarios/step_1152244178.html"><span
+                                                class="keyword">Given </span> User visits the landing page of carb manager web app.</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 01s 210ms
+                                0m 00s 229ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -348,13 +362,51 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-1 text-left small">2.</div>
                             <div class="col-8 text-left">
-                                <span data-toggle="tooltip" title="com.ipl.steps.pointTable.PointTableSteps.verifyPointsOfTeamAndTotalPoints()">
-                                    <a href="pages/step-scenarios/step_1615434744.html"><span
-                                                class="keyword">Then </span> User should see the point of every team and able to sum the points of all teams</a>
+                                <span data-toggle="tooltip" title="com.carbmanager.steps.login.LoginSteps.clickSignInLink_landingPage()">
+                                    <a href="pages/step-scenarios/step_01358230301.html"><span
+                                                class="keyword">When </span> User clicks on sign in link</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 645ms
+                                0m 00s 089ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-1 text-left small">3.</div>
+                            <div class="col-8 text-left">
+                                <span data-toggle="tooltip" title="com.carbmanager.steps.login.LoginSteps.verify_redirection_to_sign_in_page()">
+                                    <a href="pages/step-scenarios/step_097463046.html"><span
+                                                class="keyword">Then </span> User should be redirected to sign in page</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 00s 007ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-1 text-left small">4.</div>
+                            <div class="col-8 text-left">
+                                <span data-toggle="tooltip" title="com.carbmanager.steps.login.LoginSteps.verify_sign_in_page_content()">
+                                    <a href="pages/step-scenarios/step_1180490495.html"><span
+                                                class="keyword">And </span> Verify sign in page contents</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 00s 530ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -376,10 +428,10 @@ font-src * data: blob: 'unsafe-inline';"/>
                             <div class="row row_passed table-row-passed">
                                 <div class="col-1 text-left small">1.</div>
                                 <div class="col-8 text-left">
-                                    <i>com.ipl.steps.CommonHooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</i>
+                                    <i>com.carbmanager.steps.CommonHooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</i>
                                 </div>
                                 <div class="col-2 text-left small">
-                                    0m 00s 000ms
+                                    0m 00s 001ms
                                 </div>
                                 <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -397,7 +449,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2021-04-05 22:35:38.</span>
+        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2022-08-21 16:33:45.</span>
     </div>
 </footer>    </body>
     </html>

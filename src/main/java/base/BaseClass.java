@@ -72,9 +72,9 @@ public class BaseClass {
             int implicitTimeOut = Integer.parseInt(config.getProperty("implicitWait"));
             driver = DriverManager.getDriver(browserName);
             wait = DriverManager.getWebDriverWait(driver);
-            driver.manage().window().fullscreen();
+            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(implicitTimeOut, TimeUnit.SECONDS);
-
+            driver.get(testUrl);
         }
 
         if(platform.equalsIgnoreCase("Mobile")){

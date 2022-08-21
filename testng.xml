@@ -4,7 +4,7 @@
 <!--    <parameter name="environment"  value="qa"/>-->
     <test name="IPLPointTable">
         <classes>
-            <class name="com.ipl.testRunners.PointTableTestRunner"></class>
+            <class name="com.carbmanager.testRunners.TestRunner"></class>
         </classes>
     </test>
 </suite>

@@ -57,14 +57,12 @@ public class DriverManager extends BaseClass{
         }
     }
     public static WebDriverWait getWebDriverWait(WebDriver driver){
-        wait = new WebDriverWait(driver, 60);
+        wait = new WebDriverWait(driver, 20);
         return wait;
     }
 
     public static AppiumDriver openApp() throws Exception {
-        if (appiumDriver != null) {
-            System.out.println("Appium Driver already exist.");
-        } else {
+        if (appiumDriver == null) {
             String serverUrl = "http://127.0.0.1:4723/wd/hub";
             DeviceSettings capabilities  = new DeviceSettings();
             if (mobileOS.equalsIgnoreCase("iOS")) {
@@ -75,12 +73,6 @@ public class DriverManager extends BaseClass{
                 appiumDriver = new AndroidDriver(new URL(serverUrl), capabilities.androidCaps());
                 acceptLocationAccess();
                 AndroidDriver androidDriver = (AndroidDriver) appiumDriver;
-                androidDriver.pushFile("/storage/emulated/0/Download/Sample_Image.jpg", new File(System.getProperty("user.dir")+"/src/test/resources/files/Sample_Image.jpg"));
-                androidDriver.pushFile("/storage/emulated/0/Download/Sample_Image_1.png", new File(System.getProperty("user.dir")+"/src/test/resources/files/Sample_Image_1.png"));
-                androidDriver.pushFile("/storage/emulated/0/Download/Sample_Image_2.jpg", new File(System.getProperty("user.dir")+"/src/test/resources/files/Sample_Image_2.jpg"));
-                androidDriver.pushFile("/storage/emulated/0/Download/Sample_Image_3.jpg", new File(System.getProperty("user.dir")+"/src/test/resources/files/Sample_Image_3.jpg"));
-                androidDriver.pushFile("/storage/emulated/0/Download/Sample_Image_4.jpg", new File(System.getProperty("user.dir")+"/src/test/resources/files/Sample_Image_4.jpg"));
-                androidDriver.pushFile("/storage/emulated/0/Download/Sample_Image_5.jpg", new File(System.getProperty("user.dir")+"/src/test/resources/files/Sample_Image_5.jpg"));
             }
             else {
                 Log.info("The mobileOS <" + mobileOS + "> seems invalid. Please check CLI mobileOS argument.");
