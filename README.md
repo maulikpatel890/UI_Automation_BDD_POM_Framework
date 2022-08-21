@@ -6,6 +6,7 @@
 3. Run mvn clean test 
 
 #**HTML Reports:**
+
 Once the test run completes, you can generate HTML Report by using executing below command on the root directory:
 
 mvn cluecumber-report:reporting
